@@ -9,6 +9,7 @@ app.get("/matches", (req, res, next) => {
   })
 });
 
+
 app.get("/match/:id", (req, res, next) => {
   HLTV.getMatch({id: req.params.id}).then((response) => {
     res.json(response);
